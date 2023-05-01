@@ -19,8 +19,7 @@
 }
 
 .profile__container {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
   gap: 2rem; 
   max-width: 1024px; 
   margin: 0 auto;
@@ -128,10 +127,6 @@
 }
 
 @media (min-width: 854px) {
-  .profile__container {
-    grid-template-columns: 1fr 1fr 1fr;
-  
-  }
 
   .card {
     max-width: 512px;
