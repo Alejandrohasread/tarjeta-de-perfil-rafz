@@ -1,3 +1,6 @@
+:root{
+  --primary-shadow-color: rgba(40, 44, 52, 0.875);  
+}
 .body {
   background-image: url("https://i.postimg.cc/BQGpQNRH/reactluminoso.png");
   background-position: center;
@@ -12,9 +15,15 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 1rem 0;
 }
 
 .profile__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem; 
+  max-width: 1024px; 
+  margin: 0 auto;
   padding: 0 1rem;
 }
 
@@ -55,7 +64,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background-color: rgba(40, 44, 52, 0.875);
+  background-color: var(--primary-shadow-color);
   padding: 1rem;
 }
 
@@ -119,6 +128,11 @@
 }
 
 @media (min-width: 854px) {
+  .profile__container {
+    grid-template-columns: 1fr 1fr 1fr;
+  
+  }
+
   .card {
     max-width: 512px;
  
